@@ -37,7 +37,7 @@ console.log(factorial(4));
 
 // 4
 
-mass = [[1,2,3, [3.1]], 4, [5,6, [7, 8]]];
+var mass = [[1,2,3, [3.1]], 4, [5,6, [7, 8]]];
 
 function funkConvert(mass) {
    return mass.reduce((acc, val) => Array.isArray(val) ? acc.concat(funkConvert(val)) : acc.concat(val), []);
